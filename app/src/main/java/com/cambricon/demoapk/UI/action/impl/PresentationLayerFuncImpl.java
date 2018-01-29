@@ -1,8 +1,8 @@
-package com.cambricon.demoapk.action.impl;
+package com.cambricon.demoapk.UI.action.impl;
 
 import android.view.View;
 
-import com.cambricon.demoapk.action.PresentationLayerFunc;
+import com.cambricon.demoapk.UI.action.PresentationLayerFunc;
 
 public class PresentationLayerFuncImpl implements PresentationLayerFunc {
     @Override

@@ -1,4 +1,4 @@
-package com.cambricon.demoapk.view;
+package com.cambricon.demoapk.UI.view;
 
 import android.content.Context;
 

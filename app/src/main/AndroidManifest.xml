@@ -3,10 +3,10 @@
           package="com.cambricon.demoapk">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
-
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -17,16 +17,20 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".base.BaseActivity">
+        <activity android:name=".activity.base.BaseActivity">
         </activity>
         <activity android:name=".activity.SplashActivity">
         </activity>
         <activity android:name=".activity.ClassifyActivity">
         </activity>
-        <activity android:name=".base.ShowActivity">
+        <activity android:name=".activity.base.ShowActivity">
         </activity>
-
-
+        <activity android:name=".activity.NewsActivity">
+        </activity>
+        <activity android:name=".activity.RecognitionServer">
+        </activity>
+        <activity android:name=".activity.SemanticsServer">
+        </activity>
     </application>
 
 </manifest>

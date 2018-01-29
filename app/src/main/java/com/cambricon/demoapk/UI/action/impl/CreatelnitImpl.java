@@ -1,6 +1,6 @@
-package com.cambricon.demoapk.action.impl;
+package com.cambricon.demoapk.UI.action.impl;
 
-import com.cambricon.demoapk.action.CreateInit;
+import com.cambricon.demoapk.UI.action.CreateInit;
 
 
 public class CreatelnitImpl implements CreateInit{

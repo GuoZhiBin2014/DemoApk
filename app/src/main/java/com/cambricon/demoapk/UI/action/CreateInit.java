@@ -1,4 +1,4 @@
-package com.cambricon.demoapk.action;
+package com.cambricon.demoapk.UI.action;
 
 /**
  * 界面初始化
