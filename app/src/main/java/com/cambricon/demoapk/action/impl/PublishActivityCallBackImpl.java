@@ -1,8 +1,8 @@
-package com.cambricon.demoapk.common.impl;
+package com.cambricon.demoapk.action.impl;
 
 import android.os.Bundle;
 
-import com.cambricon.demoapk.common.PublishActivityCallBack;
+import com.cambricon.demoapk.action.PublishActivityCallBack;
 
 
 public class PublishActivityCallBackImpl implements PublishActivityCallBack {

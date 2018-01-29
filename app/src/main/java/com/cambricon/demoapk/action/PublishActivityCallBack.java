@@ -1,4 +1,4 @@
-package com.cambricon.demoapk.common;
+package com.cambricon.demoapk.action;
 
 import android.os.Bundle;
 
