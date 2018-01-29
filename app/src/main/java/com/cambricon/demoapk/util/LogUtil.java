@@ -8,63 +8,86 @@ import android.util.Log;
 
 public class LogUtil {
 
-    private LogUtil()
-    {
+    public static final int VERBOSE = 1;
+    public static final int DEBUG = 2;
+    public static final int INFO = 3;
+    public static final int WARN = 4;
+    public static final int ERROR = 5;
+    public static final int NOTHING = 6;
+
+    public static final int level = VERBOSE;
+
+    private LogUtil() {
         throw new UnsupportedOperationException("cannot be instantiated");
     }
 
-    public static boolean isDebug = true;// 是否需要打印bug，可以在application的onCreate函数里面初始化
     private static final String TAG = "way";
 
     // 下面四个是默认tag的函数
-    public static void i(String msg)
+    public static void v(String msg)
     {
-        if (isDebug)
+        if (level <= VERBOSE)
             Log.i(TAG, msg);
     }
 
     public static void d(String msg)
     {
-        if (isDebug)
+        if (level <= DEBUG)
             Log.d(TAG, msg);
+    }
+
+    public static void i(String msg)
+    {
+        if (level <= INFO)
+            Log.e(TAG, msg);
+    }
+
+    public static void w(String msg)
+    {
+        if (level <= WARN)
+            Log.v(TAG, msg);
     }
 
     public static void e(String msg)
     {
-        if (isDebug)
-            Log.e(TAG, msg);
-    }
-
-    public static void v(String msg)
-    {
-        if (isDebug)
+        if (level <= ERROR)
             Log.v(TAG, msg);
     }
+
+
 
     // 下面是传入自定义tag的函数
     public static void i(String tag, String msg)
     {
-        if (isDebug)
-            Log.i(tag, msg);
+        if (level <= INFO)
+            Log.e(TAG, msg);
     }
 
     public static void d(String tag, String msg)
     {
-        if (isDebug)
-            Log.i(tag, msg);
+        if (level <= DEBUG)
+            Log.d(TAG, msg);
     }
 
     public static void e(String tag, String msg)
     {
-        if (isDebug)
-            Log.i(tag, msg);
+        if (level <= ERROR)
+            Log.v(TAG, msg);
     }
 
     public static void v(String tag, String msg)
     {
-        if (isDebug)
-            Log.i(tag, msg);
+        if (level <= VERBOSE)
+            Log.i(TAG, msg);
     }
+
+    public static void w(String tag, String msg)
+    {
+        if (level <= WARN)
+            Log.v(TAG, msg);
+    }
+
+
 }
 
 
