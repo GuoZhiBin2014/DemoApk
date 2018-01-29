@@ -1,4 +1,4 @@
-package com.cambricon.demoapk.otherUtil;
+package com.cambricon.demoapk.Useless;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;

@@ -1,4 +1,4 @@
-package com.cambricon.demoapk.otherUtil;
+package com.cambricon.demoapk.Useless;
 
 import android.app.Activity;
 import android.content.ComponentName;
